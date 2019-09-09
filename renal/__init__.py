@@ -27,8 +27,12 @@ def convert_path(from_path):
     return to_path
 
 
-def main(args):
+def main(args=None):
     args = args or sys.argv
+    if len(args) < 2:
+      print('Need one filepath.')
+      return
+
     from_path = pathlib.Path(args[1])
     to_path = convert_path(from_path)
     rename(from_path, to_path)
