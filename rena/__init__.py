@@ -20,7 +20,7 @@ def rename(from_path, to_path):
 
 def convert_path(from_path):
     name = from_path.name.lower()
-    allowable = string.ascii_lowercase + string.digits + string.whitespace
+    allowable = '.' + string.ascii_lowercase + string.digits + string.whitespace
     new_name = ''.join(c for c in name if c in allowable).split()
     new_name = '_'.join(new_name)
     to_path = from_path.parent.joinpath(new_name)
