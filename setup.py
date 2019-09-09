@@ -1,7 +1,7 @@
 from setuptools import setup, Extension
 from renal.version import __version__
 
-description = "renal is a command for easily renalaming directories and files.",
+description = "renal is a command for easily renalaming directories and files."
 
 setup(
     name = 'renal',
