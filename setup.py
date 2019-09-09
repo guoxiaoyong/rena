@@ -1,22 +1,22 @@
 from setuptools import setup, Extension
-from rena.version import __version__
+from renal.version import __version__
 
-description = "rena is a command for easily renaaming directories and files.",
+description = "renal is a command for easily renalaming directories and files.",
 
 setup(
-    name = 'rena',
+    name = 'renal',
     version = __version__,
     description = description,
     long_description = description,
-    keywords = 'filesystem bash rename mv move',
+    keywords = 'filesystem bash renalme mv move',
     author = 'Xiaoyong Guo',
     author_email = 'guo.xiaoyong@gmail.com',
     url = 'https://github.com/guoxiaoyong/rena',
-    packages = ['rena'],
-    package_dir = {"rena": "rena"},
+    packages = ['renal'],
+    package_dir = {"renal": "renal"},
     entry_points = {
         'console_scripts': [
-            'rena = rena:main',
+            'renal = renal:main',
         ],
     },
 )
